@@ -1,0 +1,127 @@
+/* ===== Reset dasar ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f9fa;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #3b040b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active {
+  background: #410303;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #4e0711;
+  border-bottom: 2px solid #380202;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* ===== IMAGE BOX ===== */
+.image-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 500px; /* agar proporsional */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  display: block;
+  margin: 10px auto;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: rgb(73, 3, 3);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
+.image-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-box img {
+  width: 45%;         /* sebelumnya 40%, sekarang diperkecil lagi */
+  max-width: 200px;   /* maksimal 200px biar tetap tajam tapi hemat ruang */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ccc;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.image-box img:hover {
+  transform: scale(1.03);
+}
